@@ -1,5 +1,69 @@
+/* classi generiche */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+
+/* classi utility */
+.gray{
+    color: gray;
+}
+
+.white{
+    color: white;
+}
+
+.margin-right-10{
+    margin-right: 10px;
+}
+
+/****** FULL PAGE *****/
+.full-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/****** MAIN ******/
+main{
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-color: grey;
+}
+
+
+
+
+
+/****** FOOTER ******/
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(15, 15, 14, 0.8);
+    display: flex;
+}
+
+.footer-left{
+    display: flex;
+    align-items: center;
+}
+
+.footer-left img{
+    height: 60%;
+    margin: auto 10px;
+}
+
+.footer-left>.text h4,
+.footer-left>.text span{
+   font-size: small;
+}
+
+.text{
+    margin-right: 15px;
+}
+
+
+
