@@ -103,7 +103,6 @@ nav span{
 }
 
 /* playlist */
-
 .playlist h4{
     font-size: 0.8rem;
 }
@@ -146,6 +145,10 @@ li{
     margin-bottom: 3px;
 }
 
+.profile .install span{
+    font-size: x-small;
+}
+
 .img-account{
     width: 30px;
     height: 30px;
@@ -153,6 +156,7 @@ li{
     border-radius: 50%;
     padding-left: 5px;
     padding-top: 1px;
+    display: inline-block;
 }
 
 .img-account img{
@@ -163,14 +167,28 @@ hr{
     margin: 10px 0;
 }
 
-/*** HEADER ***/
-header{
-    background-color: yellow;
-    width: 100%;
+h2{
+    display: inline-block;
+    margin-left: 5px;
 }
 
+/*** HEADER ***/
+header{
+    background-color: rgb(25, 25, 25);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
-
+.upgrade input{
+    background-color: rgb(25, 25, 25);
+    border-color: white;
+    border-radius: 20px;
+    padding: 8px 30px;
+    font-size: 12px;
+}
 
 /****** FOOTER ******/
 footer{
