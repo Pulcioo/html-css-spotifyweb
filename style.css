@@ -65,6 +65,7 @@ nav{
     height: calc(100vh - 80px);
     width: 20%;
     padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -133,6 +134,33 @@ ul{
 li{
     font-size: small;
     margin: 15px 0;
+}
+
+/* profile */
+.profile{
+    font-size: x-small;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-bottom: 3px;
+}
+
+.img-account{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50%;
+    padding-left: 5px;
+    padding-top: 1px;
+}
+
+.img-account img{
+    width: 20px
+}
+
+hr{
+    margin: 10px 0;
 }
 
 /*** HEADER ***/
