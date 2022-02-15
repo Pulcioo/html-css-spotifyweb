@@ -4,13 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-}
-
-/* classi utility */
-.gray{
     color: gray;
 }
 
+/* classi utility */
 .white{
     color: white;
 }
@@ -27,7 +24,7 @@
     margin: auto 15px;
 }
 
-.btn-footer{
+.btn{
     background-color: transparent;
     border: 0;
 }
@@ -51,6 +48,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
 }
 
 /****** MAIN ******/
@@ -58,8 +56,90 @@ main{
     height: calc(100vh - 80px);
     width: 100%;
     background-color: grey;
+    display: flex;
 }
 
+/*** NAV ***/
+nav{
+    background-color: black;
+    height: calc(100vh - 80px);
+    width: 20%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* container-button */
+.container-button{
+    margin: 20px 0;
+}
+
+nav>img{
+    width: 65%;
+    margin-top: 15px;
+}
+
+.home .btn img,
+.search .btn img,
+.library .btn img{
+    width: 25px;
+}
+
+nav button{
+    text-align: start;
+}
+
+.home,
+.search,
+.library{
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+}
+
+nav span{
+    font-size: small;
+}
+
+/* playlist */
+
+.playlist h4{
+    font-size: 0.8rem;
+}
+
+.square{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.square i{
+    color: black;
+    font-size: normal;
+}
+
+.playlist span{
+    font-size: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: small;
+    margin: 15px 0;
+}
+
+/*** HEADER ***/
+header{
+    background-color: yellow;
+    width: 100%;
+}
 
 
 
