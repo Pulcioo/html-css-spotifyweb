@@ -19,6 +19,20 @@
     margin-right: 10px;
 }
 
+.btn-footer{
+    background-color: transparent;
+    border: 0;
+}
+
+.line{
+    height: 3px;
+    background-color: gray;
+}
+
+.width-1{
+    width: 90px;
+}
+
 /****** FULL PAGE *****/
 .full-page{
     width: 100vw;
@@ -44,8 +58,10 @@ footer{
     width: 100%;
     background-color: rgba(15, 15, 14, 0.8);
     display: flex;
+    justify-content: space-between;
 }
 
+/* footer-left */
 .footer-left{
     display: flex;
     align-items: center;
@@ -63,6 +79,12 @@ footer{
 
 .text{
     margin-right: 15px;
+}
+
+/* footer-right */
+.footer-right{
+    display: flex;
+    align-items: center;
 }
 
 
