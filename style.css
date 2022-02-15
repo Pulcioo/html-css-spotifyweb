@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* classi utility */
@@ -19,6 +19,14 @@
     margin-right: 10px;
 }
 
+.margin-right-20{
+    margin-right: 20px;
+}
+
+.margin-15{
+    margin: auto 15px;
+}
+
 .btn-footer{
     background-color: transparent;
     border: 0;
@@ -29,8 +37,12 @@
     background-color: gray;
 }
 
-.width-1{
-    width: 90px;
+.width-line-1{
+    width: 100px;
+}
+
+.width-line-2{
+    width: 300px;
 }
 
 /****** FULL PAGE *****/
@@ -78,7 +90,7 @@ footer{
 }
 
 .text{
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 /* footer-right */
@@ -86,6 +98,35 @@ footer{
     display: flex;
     align-items: center;
 }
+
+/* footer-center */
+.footer-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* footer center-top */
+.footer-center .center-top i{
+    font-size: 1.1rem;
+}
+
+#play{
+    font-size: 1.8rem;
+}
+
+/* footer center-bottom */
+
+.footer-center .center-bottom div{
+    display: inline-block;
+}
+
+.footer-center .center-bottom span{
+    font-size: x-small;
+}
+
 
 
 
