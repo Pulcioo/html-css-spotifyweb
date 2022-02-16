@@ -183,7 +183,7 @@ hr{
 
 /* header */
 .music header{
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(15, 15, 15);
     height: 80px;
     width: 100%;
     position: absolute;
@@ -198,7 +198,7 @@ hr{
 }
 
 .upgrade input{
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(15, 15, 15);
     border-color: white;
     border-radius: 20px;
     padding: 8px 30px;
@@ -210,6 +210,8 @@ hr{
     height: calc(100vh - 80px);
     width: 100%;
     padding-top: 90px;
+    background-color: rgb(30, 30, 40);
+    overflow-y: auto;
 }
 
 /* music-menu */
@@ -224,21 +226,32 @@ hr{
 /* track */
 .tracks{
     display: flex;
+    flex-direction: column;
+}
+
+.tracks h2{
+    font-size: 18px;
 }
 
 .recently-played>h2{
     margin: 20px 0;
 }
 
+.create-for>p,
+.most-popular>p{
+    font-size: x-small;
+    margin-bottom: 20px;
+}
+
 .container-cover{
     display: flex;
     column-gap: 20px;
+    margin-bottom: 20px;
 }
 
 .cover{
     height: 150px;
-    width: 150px;
-    background-color: aqua;   
+    width: 150px;  
 }
 
 .album{
@@ -250,13 +263,51 @@ hr{
     max-width: 150px;
 }
 
+#metallica{
+    background-image: url(img/metal_lifting.jpg);
+    background-size: cover;
+}
 
+#stranger{
+    background-image: url(img/stranger.jpeg);
+    background-size: cover;
+}
+
+#place{
+    background-image: url(img/aquietplace.jpeg);
+    background-size: cover;
+}
+
+#split{
+    background-image: url(img/split.jpeg);
+    background-size: cover;
+}
+
+#cure{
+    background-image: url(img/cure.jpeg);
+    background-size: cover;
+}
+
+#sinister{
+    background-image: url(img/sinister.jpeg);
+    background-size: cover;
+}
+
+#release{
+    background-image: url(img/radar.jpeg);
+    background-size: cover;
+}
+
+#daily{
+    background-image: url(img/mixdaily.jpeg);
+    background-size: cover;
+}
 
 /****** FOOTER ******/
 footer{
     height: 80px;
     width: 100%;
-    background-color: rgba(30, 30, 30, 0.8);
+    background-color: rgba(15, 15, 15, 0.9);
     display: flex;
     justify-content: space-between;
 }
