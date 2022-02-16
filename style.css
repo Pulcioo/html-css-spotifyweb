@@ -46,6 +46,18 @@
     width: 300px;
 }
 
+.padding-left-10{
+    padding-left: 10px;
+}
+
+.border-green-left{
+    border-left: 3px solid yellowgreen;
+}
+
+.border-green-bottom{
+    border-bottom: 3px solid yellowgreen;
+}
+
 /****** FULL PAGE *****/
 .full-page{
     width: 100vw;
@@ -66,7 +78,6 @@ nav{
     background-color: black;
     height: calc(100vh - 80px);
     width: 220px;
-    padding-left: 10px;
     padding-right: 10px;
     display: flex;
     flex-direction: column;
@@ -385,7 +396,60 @@ footer{
 .upgrade input:hover{
     transform: scale(1.1);
 }
-strong:hover{
+
+strong:hover,
+.playlist li:hover,
+.container-button span:hover{
     color: white;
 }
 
+.profile .install:hover i,
+.profile .install:hover #app{
+    color: white;
+}
+
+.playlist .plus:hover .square{
+    background-color: white;
+}
+
+.playlist .plus:hover span{
+    color: white;
+}
+
+.footer-left span:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-left #heart:hover,
+.footer-left #folder:hover{
+    color: white;
+}
+
+.center-top #play:hover{
+    transform: scale(1.1);
+}
+
+.album:hover #metallica,
+.album:hover #stranger,
+.album:hover #place,
+.album:hover #split,
+.album:hover #cure,
+.album:hover #sinister,
+.album:hover #release,
+.album:hover #daily,
+.album:hover #lana,
+.album:hover #ludovico{
+    opacity: 40%;
+}
+
+.none{
+    font-size: 50px;
+    line-height: 150px;
+    vertical-align: middle;
+    display: none;
+}
+
+.album:hover .none{
+    display: inline;
+}

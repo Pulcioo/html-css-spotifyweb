@@ -22,27 +22,29 @@
             <!-- nav -->
             <nav>
                 <!-- sezione home, search, library -->
-                <img src="img/logo.svg" alt="Spotify">
+                <img class="padding-left-10" src="img/logo.svg" alt="Spotify">
                 <!-- container-button -->
                 <div class="container-button">
-                    <div class="home">
-                        <button class="btn"><img src="img/home.svg" alt="Home"></button>
+                    <div class="home border-green-left">
+                        <button class="btn padding-left-10"><img src="img/home.svg" alt="Home"></button>
                         <span>Home</span>
                     </div>
                     <div class="search">
-                        <button class="btn"><img src="img/search.svg" alt="Cerca"></button>
+                        <button class="btn padding-left-10"><img src="img/search.svg" alt="Cerca"></button>
                         <span>Cerca</span>
                     </div>
                     <div class="library">
-                        <button class="btn"><img src="img/libreria.svg" alt="Libreria"></button>
+                        <button class="btn padding-left-10"><img src="img/libreria.svg" alt="Libreria"></button>
                         <span>La tua libreria</span>
                     </div>
                 </div>
                 <!-- sezione playlist -->
-                <div class="playlist">
+                <div class="playlist padding-left-10">
                     <h4 class="white">PLAYLIST</h4>
-                    <div class="square"><i class="fas fa-plus"></i></div>
-                    <span>Crea Playlist</span>
+                    <div class="plus">
+                        <div class="square"><i class="fas fa-plus"></i></div>
+                        <span>Crea Playlist</span>
+                    </div>
                     <ul>
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
@@ -54,10 +56,10 @@
                     </ul>
                 </div>
                 <!-- sezione profile -->
-                <div class="profile">
+                <div class="profile padding-left-10">
                     <div class="install">
                         <button class="btn"><i class="far fa-arrow-alt-circle-down"></i></button>
-                        <span>Installa app</span>
+                        <span id="app">Installa app</span>
                     </div>
                     <hr>
                     <div class="account">
@@ -80,7 +82,7 @@
                 <div class="music-container">
                     <!-- music-menu -->
                     <div class="music-menu">
-                        <button class="btn"><strong>IN EVIDENZA</strong></button>
+                        <button class="btn border-green-bottom"><strong>IN EVIDENZA</strong></button>
                         <button class="btn"><strong>PODCAST</strong></button>
                         <button class="btn"><strong>CLASSIFICHE</strong></button>
                         <button class="btn"><strong>GENERI E MOOD</strong></button>
@@ -94,32 +96,32 @@
                             <h2 class="white">Recently played</h2>
                             <div class="container-cover">
                                 <div class="album">
-                                    <div id="metallica" class="cover"></div>
+                                    <div id="metallica" class="cover"><i class="far fa-play-circle white none "></i></div>
                                     <h4 class="white">Heavy Metal</h4>
                                     <span>Subtitle</span>
                                 </div>
                                 <div class="album">
-                                    <div id="stranger" class="cover"></div>
+                                    <div id="stranger" class="cover"><i class="far fa-play-circle white none "></i></div>
                                     <h4 class="white">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
                                     <span>Subtitle</span>
                                 </div>
                                 <div class="album">
-                                    <div id="place" class="cover"></div>
+                                    <div id="place" class="cover"><i class="far fa-play-circle white none "></i></div>
                                     <h4 class="white">A quiet place</h4>
                                     <span>Subtitle</span>
                                 </div>
                                 <div class="album">
-                                    <div id="split" class="cover"></div>
+                                    <div id="split" class="cover"><i class="far fa-play-circle white none "></i></div>
                                     <h4 class="white">Split</h4>
                                     <span>Subtitle</span>
                                 </div>
                                 <div class="album">
-                                    <div id="cure" class="cover"></div>
+                                    <div id="cure" class="cover"><i class="far fa-play-circle white none "></i></div>
                                     <h4 class="white">A cure for wellness</h4>
                                     <span>Subtitle</span>
                                 </div>
                                 <div class="album">
-                                    <div id="sinister" class="cover"></div>
+                                    <div id="sinister" class="cover"><i class="far fa-play-circle white none "></i></div>
                                     <h4 class="white">Sinister</h4>
                                     <span>Subtitle</span>
                                 </div>
@@ -128,14 +130,14 @@
                         <!-- create per -->
                         <div class="create-for margin-left-30">
                             <h2 class="white">Creato per Davide Pulci</h2>
-                            <p><strong>Più ascolti, più accurati saranno i suggerimenti.</strong></p>
+                            <p><b>Più ascolti, più accurati saranno i suggerimenti.</b></p>
                             <div class="container-cover">
                                 <div class="album">
-                                    <div id="release" class="cover"></div>
+                                    <div id="release" class="cover"><i class="far fa-play-circle white none "></i></div>
                                     <h4 class="white">Release Radar</h4>
                                 </div>
                                 <div class="album">
-                                    <div id="daily" class="cover"></div>
+                                    <div id="daily" class="cover"><i class="far fa-play-circle white none "></i></div>
                                     <h4 class="white">Daily Mix 1</h4>
                                 </div>
                             </div>
@@ -143,14 +145,14 @@
                         <!-- più popolari -->
                         <div class="most-popular margin-left-30">
                             <h2 class="white">Artisti più popolari</h2>
-                            <p><strong>Più ascolti, più accurati saranno i suggerimenti.</strong></p>
+                            <p><b>Più ascolti, più accurati saranno i suggerimenti.</b></p>
                             <div class="container-cover">
                                 <div class="album">
-                                    <div id="lana" class="cover"></div>
+                                    <div id="lana" class="cover"><i class="far fa-play-circle white none "></i></div>
                                     <h4 class="white">Lana Del Rey</h4>
                                 </div>
                                 <div class="album">
-                                    <div id="ludovico" class="cover"></div>
+                                    <div id="ludovico" class="cover"><i class="far fa-play-circle white none "></i></div>
                                     <h4 class="white">Ludovico Einaudi</h4>
                                 </div>
                                 <div>
@@ -171,8 +173,8 @@
                     <h4 class="white">Sinister</h4>
                     <span>Brano Nome</span>
                 </div>
-                <button class="btn"><i class="far fa-heart margin-right-10"></i></button>
-                <button class="btn"><i class="far fa-folder"></i></button>
+                <button class="btn"><i id="heart" class="far fa-heart margin-right-10"></i></button>
+                <button class="btn"><i id="folder" class="far fa-folder"></i></button>
             </div>
             <!-- footer-center -->
             <div class="footer-center">
@@ -186,9 +188,9 @@
                 </div>
                 <!-- footer center-bottom -->
                 <div class="center-bottom">
-                    <span class="white"><strong class="white"> 0.25</strong></span>
+                    <span class="white"><b class="white"> 0.25</b></span>
                     <div class="line width-line-2 margin-15"></div>
-                    <span class="white"><strong class="white"> 4.35</strong></span>
+                    <span class="white"><b class="white"> 4.35</b></span>
                 </div>
             </div>
             <!-- footer-right -->
