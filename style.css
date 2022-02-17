@@ -58,6 +58,10 @@
     border-bottom: 3px solid yellowgreen;
 }
 
+.none{
+    display: none;
+}
+
 /****** FULL PAGE *****/
 .full-page{
     width: 100vw;
@@ -112,7 +116,7 @@ nav button{
 }
 
 nav span{
-    font-size: small;
+    font-size: x-small;
 }
 
 /* playlist */
@@ -135,7 +139,7 @@ nav span{
 }
 
 .playlist span{
-    font-size: 1rem;
+    font-size: small;
 }
 
 ul{
@@ -143,8 +147,12 @@ ul{
 }
 
 li{
-    font-size: small;
+    font-size: x-small;
     margin: 15px 0;
+}
+
+.playlist{
+    overflow: auto;
 }
 
 /* profile */
