@@ -46,11 +46,6 @@
     padding-left: 10px;
 }
 
-.border-green-left{
-    border-left: 3px solid yellowgreen;
-    display: none;
-}
-
 .border-green-bottom{
     border-bottom: 3px solid yellowgreen;
 }
@@ -419,10 +414,14 @@ footer{
 
 /* effetti */
 .upgrade input:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
-strong:hover,
+.green-hover:hover{
+    color: white;
+    border-bottom: 3px solid yellowgreen;
+}
+
 .playlist li:hover{
     color: white;
 }
@@ -437,6 +436,12 @@ strong:hover,
 .container-button .search:hover img,
 .container-button .library:hover img{
     opacity: 1;
+}
+
+.container-button .home:hover,
+.container-button .search:hover,
+.container-button .library:hover{
+    border-left: 3px solid yellowgreen;
 }
 
 .profile .install:hover i,
