@@ -36,13 +36,18 @@
         margin-left: 10px;
     }
 
-    /* madia-queries footer */
+    
+}
 
+/****** 639px ******/
+
+@media screen and (max-width: 639px){
+
+    /* madia-queries footer */
     .footer-left .icon{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-   
 
 }

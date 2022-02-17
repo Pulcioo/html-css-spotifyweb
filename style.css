@@ -48,6 +48,7 @@
 
 .border-green-left{
     border-left: 3px solid yellowgreen;
+    display: none;
 }
 
 .border-green-bottom{
@@ -99,7 +100,7 @@ nav{
 }
 
 nav>img{
-    width: 65%;
+    width: 140px;
     margin-top: 15px;
 }
 
@@ -107,6 +108,7 @@ nav>img{
 .search .btn img,
 .library .btn img{
     width: 25px;
+    opacity: 0.6;
 }
 
 nav button{
@@ -176,8 +178,8 @@ li{
 }
 
 .img-account{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: gray;
     border-radius: 50%;
     padding-left: 5px;
@@ -186,7 +188,7 @@ li{
 }
 
 .img-account img{
-    width: 20px
+    width: 16px
 }
 
 hr{
@@ -279,17 +281,18 @@ hr{
 }
 
 .cover{
-    height: 150px;
-    width: 150px;  
+    height: 170px;
+    width: 170px;  
 }
 
 .album{
     font-size: small;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 .album>h4{
-    max-width: 150px;
+    max-width: 170px;
 }
 
 #metallica{
@@ -420,9 +423,20 @@ footer{
 }
 
 strong:hover,
-.playlist li:hover,
-.container-button span:hover{
+.playlist li:hover{
     color: white;
+}
+
+.container-button .home:hover span,
+.container-button .search:hover span,
+.container-button .library:hover span{
+    color: white;
+}
+
+.container-button .home:hover img,
+.container-button .search:hover img,
+.container-button .library:hover img{
+    opacity: 1;
 }
 
 .profile .install:hover i,
