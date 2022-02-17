@@ -12,8 +12,8 @@
     color: white;
 }
 
-.margin-right-10{
-    margin-right: 10px;
+.text-top{
+    vertical-align: text-top;
 }
 
 .margin-right-15{
@@ -31,15 +31,6 @@
 .btn{
     background-color: transparent;
     border: 0;
-}
-
-.line{
-    height: 3px;
-    background-color: gray;
-}
-
-.width-line-1{
-    width: 80px;
 }
 
 .padding-left-10{
@@ -232,7 +223,7 @@ hr{
     width: 100%;
     padding-top: 90px;
     background-color: rgb(30, 30, 40);
-    overflow-y: auto;
+    overflow-y: auto;  
 }
 
 /* music-menu */
@@ -371,6 +362,10 @@ footer{
     margin-right: 10px;
 }
 
+#heart{
+    margin-right: 10px;
+}
+
 /* footer-right */
 .footer-right{
     display: flex;
@@ -410,6 +405,32 @@ footer{
     justify-content: center;
     align-items: end;
     width: 80%;
+}
+
+#big[type="range"]{
+    width: 90%;
+    height: 4px;
+    background-color: gray;
+    overflow: hidden;
+    -webkit-appearance: none;
+}
+
+#small[type="range"]{
+    width: 80px;
+    height: 4px;
+    margin-right: 10px;
+    background-color: gray;
+    overflow: hidden;
+    -webkit-appearance: none;
+}
+
+::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20%;
+    width: 3px;
+    background-color: gray;
+    box-shadow: -100vw 0 0 100vw white;
+
 }
 
 /* effetti */
@@ -493,4 +514,9 @@ footer{
 
 .album:hover .none{
     display: inline;
+}
+
+::-webkit-slider-thumb:hover{
+    height: 5px;
+    box-shadow: -100vw 0 0 100vw yellowgreen;
 }
