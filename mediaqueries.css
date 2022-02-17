@@ -37,6 +37,12 @@
     }
 
     /* madia-queries footer */
+
+    .footer-left .icon{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
    
 
 }
